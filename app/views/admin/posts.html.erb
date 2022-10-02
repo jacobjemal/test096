@@ -1,4 +1,19 @@
 <div class="container">
   <h1 class="text-center" >Adminstrator</h1>
   <%= render 'admin/nav_links' %>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Post</th>
+        <th scope="col">Author</th>
+        <th scope="col">Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @post.each do |post| %>
+      <th><%= post.id %></th>
+      <% end %>
+    </tbody>
+  </table>
 </div>
