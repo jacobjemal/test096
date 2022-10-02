@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'admin', to: 'admin#index'
+  get 'admin/posts'
+  get 'admin/comments'
+  get 'admin/users'
+  get 'admin/show_post'
   resources :articles
   get 'search', to: 'search#index'
   get 'users/profile'
