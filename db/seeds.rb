@@ -12,3 +12,9 @@ User.create(email: "jhon@example.com", name: "jhon", password: "password", passw
 10.times do |x|
     Post.create(title: "title #{x}", body: "body #{x} words go here", user_id: User.first.id)
 end
+
+
+50.times do |x|
+    Article.create(title: Faker::Lorem.sentences(number: 1),
+        body: Faker::Lorem.paragraph(sentence_count: 5))
+end

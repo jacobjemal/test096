@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :articles
+  get 'search', to: 'search#index'
   get 'users/profile'
     devise_for :users, controllers: {
       sessions: 'users/sessions',
