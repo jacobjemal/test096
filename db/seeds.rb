@@ -36,3 +36,5 @@ Post.import(posts, recursive: true)
 end
 
 puts "Elapsed time is #{elapsed.real} seconds"
+
+puts '🌱 seeding done 🌱'
