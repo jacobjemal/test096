@@ -22,13 +22,13 @@ john = User.second
 1000.times do |x|
 puts "Creating post #{x}"
 post = Post.new(title: "Title #{x}",
-            body: "Body #{x} Words go here Idk",
-            user: dean)
+                body: "Body #{x} Words go here Idk",
+                user: dean)
 
 10.times do |y|
 puts "Creating comment #{y} for post #{x}"
 post.comments.build(body: "Comment #{y}",
-                  user: john)
+                    user: john)
 end
 posts.push(post)
 end
